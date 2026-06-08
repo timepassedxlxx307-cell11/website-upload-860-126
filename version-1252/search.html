@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>站内搜索-高清影视大全</title>
+  <meta name="description" content="专注于提供最新上映的国产电影高清在线观看服务。平台实时更新院线热门大片、口碑佳作，所有内容均可免费流畅播放，是国产电影爱好者的优选站。">
+  <meta name="keywords" content="最新国产电影在线观看_高清完整版免费播放平台-高清影视大全,国产,视频,免费,在线观看,高清,影视大全,搜索,影视搜索">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/search-data.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="高清影视大全首页">
+      <span class="brand-icon">影</span>
+      <span class="brand-text">
+        <strong>高清影视大全</strong>
+        <small>国产电影免费在线观看</small>
+      </span>
+    </a>
+    <nav class="main-nav" data-mobile-nav>
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="categories.html">分类</a>
+        <a class="nav-link" href="ranking.html">排行榜</a>
+        <a class="nav-link is-active" href="search.html">搜索</a>
+    </nav>
+    <form class="header-search js-search-form" action="search.html" method="get">
+      <input type="search" name="q" placeholder="搜索视频..." aria-label="搜索视频">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-label="展开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<main class="page-main">
+  <section class="page-hero small-hero">
+    <div class="container">
+      <span class="eyebrow">Search</span>
+      <h1>站内搜索</h1>
+      <p>输入影片名、地区、年份、类型或标签，快速查找想看的影视内容。</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="search-panel">
+        <form class="search-large js-search-form" action="search.html" method="get">
+          <input type="search" name="q" data-search-input placeholder="搜索视频、分类、标签..." aria-label="搜索视频">
+          <button type="submit">搜索</button>
+        </form>
+        <div class="search-controls">
+          <select data-search-region aria-label="筛选地区">
+            <option value="all">全部地区</option>
+            <option value="国产">国产</option>
+            <option value="中国">中国</option>
+            <option value="日本">日本</option>
+            <option value="韩国">韩国</option>
+            <option value="美国">美国</option>
+            <option value="英国">英国</option>
+            <option value="欧美">欧美</option>
+          </select>
+          <select data-search-sort aria-label="排序方式">
+            <option value="match">综合排序</option>
+            <option value="year">年份排序</option>
+            <option value="title">标题排序</option>
+          </select>
+        </div>
+      </div>
+      <div class="section-heading compact">
+        <div>
+          <span class="section-kicker">Results</span>
+          <h2 data-search-title>搜索结果</h2>
+        </div>
+        <a href="categories.html">返回分类</a>
+      </div>
+      <div class="movie-grid" data-search-results></div>
+      <div class="pagination" data-search-pagination></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">
+        <span class="brand-icon">影</span>
+        <strong>高清影视大全</strong>
+      </div>
+      <p>专注于提供最新上映的国产电影高清在线观看服务。平台实时更新院线热门大片、口碑佳作，所有内容均可免费流畅播放，是国产电影爱好者的优选站。</p>
+    </div>
+    <div>
+      <h3>影视分类</h3>
+      <ul>
+          <li><a href="category-domestic-picks.html">国产热映</a></li>
+          <li><a href="category-cinema-new.html">院线新片</a></li>
+          <li><a href="category-drama-zone.html">高分剧场</a></li>
+          <li><a href="category-suspense-thriller.html">悬疑惊悚</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>频道入口</h3>
+      <ul>
+          <li><a href="category-action-crime.html">动作犯罪</a></li>
+          <li><a href="category-romance-comedy.html">爱情喜剧</a></li>
+          <li><a href="category-fantasy-sci-fi.html">科幻奇幻</a></li>
+          <li><a href="category-documentary-world.html">纪录世界</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>热门导航</h3>
+      <ul>
+        <li><a href="ranking.html">热度排行榜</a></li>
+        <li><a href="search.html?q=国产">国产电影</a></li>
+        <li><a href="search.html?q=悬疑">悬疑惊悚</a></li>
+        <li><a href="search.html?q=爱情">爱情喜剧</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 高清影视大全</div>
+</footer>
+<script src="./assets/js/site.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
